@@ -1,0 +1,26 @@
+.mycarousel {
+    width: 60%;
+    height: 65vh;
+    border-radius: 10px;
+}
+
+.myimg {
+    display: block;
+    width: 100%;
+    height: 65vh;
+    object-fit: fill;
+    border-radius: 20px;
+}
+
+
+@media (max-width: 900px) {
+    .mycarousel {
+        width: 70%;
+    }
+}
+
+@media (max-width: 600px) {
+    .mycarousel {
+        width: 100%;
+    }
+}

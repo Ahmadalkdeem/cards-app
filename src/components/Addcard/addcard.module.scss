@@ -1,0 +1,46 @@
+.fdiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: darkslateblue;
+}
+
+.mysectioninput {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.myinput {
+    width: 200px;
+    margin: 3px;
+    border: 2px solid black;
+    outline: none;
+    border-radius: 6px;
+}
+
+::placeholder {
+    color: rgba(0, 0, 0, 0.534);
+    font-weight: 500;
+    padding-left: 5px;
+}
+
+.mybtn {
+    border: 2px solid black;
+    padding: 5px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border-radius: 5px;
+    color: chocolate;
+    font-weight: 700;
+    font-size: 20px;
+    letter-spacing: 1.5px;
+    // margin: 0 auto;
+    text-align: center;
+}
+
+.myh3 {
+    text-align: center;
+    // background-color: darkblue;
+}

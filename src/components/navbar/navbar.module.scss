@@ -1,0 +1,56 @@
+.mynav {
+    background-color: darkslategray;
+}
+
+.mylink {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 600;
+    width: 100%;
+    font-size: 20px;
+    text-decoration: none;
+    margin: 0 3px;
+    text-align: center;
+    color: black;
+}
+
+.mylink2 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 600;
+    width: 100%;
+    font-size: 20px;
+    text-decoration: none;
+    margin: 0 3px;
+    text-align: center;
+    color: black;
+
+}
+
+.mylink:hover {
+    color: black;
+}
+
+.mylink2:hover {
+    color: black;
+}
+
+.mylogo {
+    font-weight: 800;
+    color: black;
+    text-decoration: none;
+    font-size: 25px;
+}
+
+.mylogo:hover {
+    font-weight: 800;
+    color: black;
+}
+
+@media (max-width: 991.5px) {
+    .mylink {
+        margin-bottom: 5px;
+    }
+
+    .mylink2 {
+        margin-bottom: 40px;
+    }
+}

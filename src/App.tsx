@@ -1,57 +1,30 @@
 import React from 'react';
-import logo from './logo.svg';
-import { Counter } from './features/counter/Counter';
 import './App.css';
-
+import { Route, Routes } from "react-router-dom";
+import CardDetails from './pages/card-detalise/CardDetails';
+import Cardlist from './pages/card-list/Cardlist';
+import Editcard from './pages/edit-card/Editcard';
+import './mybootstrp.scss'
+import MyNavbar from './components/navbar/Mynav';
+import Myfooter from './components/footer/Myfooter';
+import Notfoud from './components/404/Notfoud';
+import About from './components/about/About';
 function App() {
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <Counter />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <span>
-          <span>Learn </span>
-          <a
-            className="App-link"
-            href="https://reactjs.org/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            React
-          </a>
-          <span>, </span>
-          <a
-            className="App-link"
-            href="https://redux.js.org/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Redux
-          </a>
-          <span>, </span>
-          <a
-            className="App-link"
-            href="https://redux-toolkit.js.org/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Redux Toolkit
-          </a>
-          ,<span> and </span>
-          <a
-            className="App-link"
-            href="https://react-redux.js.org/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            React Redux
-          </a>
-        </span>
-      </header>
-    </div>
+    <>
+      <MyNavbar />
+
+      <Routes>
+        <Route path="/" element={<Cardlist />} />
+        <Route path="/cards" element={<Cardlist />} />
+        <Route path="/cards/edit/:id" element={<Editcard />} />
+        <Route path="/cards/details/:id" element={<CardDetails />} />
+        <Route path="/Notfoud" element={<Notfoud />} />
+        <Route path="/about" element={<About />} />
+      </Routes>
+      <Myfooter />
+    </>
   );
 }
 

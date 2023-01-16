@@ -1,0 +1,32 @@
+.mybody {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: slategray;
+}
+
+.myp {
+    display: flex;
+    align-items: center;
+    font-size: 15vw;
+    font-weight: 900;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.myp2 {
+    font-size: 45px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+@media (max-width:600px) {
+    .myp {
+        font-size: 28vw;
+    }
+
+    .myp2 {
+        font-size: 25px;
+    }
+}

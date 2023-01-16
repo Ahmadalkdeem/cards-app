@@ -1,0 +1,92 @@
+.cardpage {
+    background-color: slategray;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.mydiv {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    gap: 10px;
+}
+
+.myh1 {
+    text-transform: uppercase;
+    width: 100%;
+    text-align: center;
+    font-family: serif;
+    margin: 20px 0;
+}
+
+.divdetales2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+.divdetales3 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 15px;
+    padding: 10px;
+}
+
+.myp {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: beige;
+    border-radius: 8px;
+    padding: 5px;
+    width: 100%;
+    text-align: left;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    overflow: auto;
+}
+
+.myspan {
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+    margin-right: 5px;
+    font-weight: 700;
+}
+
+.descrpion {
+    width: 100%;
+    background-color: darkgrey;
+    border-radius: 5px;
+    padding: 5px;
+    margin-top: 10px;
+    text-align: justify;
+    overflow: auto;
+}
+
+.icon {
+    font-size: 40px;
+    margin: 5px 10px;
+    color: black;
+}
+
+.icon2 {
+    font-size: 30px;
+}
+
+.icon:hover {
+    font-size: 40px;
+    margin: 5px 10px;
+    color: black;
+}
+
+@media (max-width: 650px) {
+    .myp {
+        justify-content: start;
+    }
+}
